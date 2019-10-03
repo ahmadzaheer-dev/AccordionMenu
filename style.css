@@ -25,12 +25,21 @@
 
 /*------Styling the main Links------*/
 .main_link_container{
-    display: block;
+    display: flex;
     background-color:#2ecc71;          /*Main Menu Background Color*/
     padding: 15px 30px;
     border-bottom: 1px dotted #2ecc71;
     cursor:pointer;
 
+}
+
+.icon_container{
+    margin-left:auto;
+}
+
+.icon_container .fas{
+    color:white;
+    font-size:14px;
 }
 
 .main_link_container a{
@@ -77,4 +86,17 @@
 /*------Removing the border from the last Items------*/
 .last{
     border-bottom: 0px !important;
+}
+
+
+/*------Styling the Font Awesome Icons------*/
+.fas{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/*------Class for displaying Icons to none------*/
+/*This class is added and removed from the font Awesome icons using js*/
+.hide_icon{
+    display: none !important;
 }
