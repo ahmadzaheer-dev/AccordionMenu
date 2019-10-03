@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+
+/*------Centering the content------*/
+.middle{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+
+/*------Styling the Container------*/
+.wrapper{
+    width: 260px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+
+/*------Styling the main Links------*/
+.main_link_container{
+    display: block;
+    background-color:#2ecc71;          /*Main Menu Background Color*/
+    padding: 15px 30px;
+    border-bottom: 1px dotted #2ecc71;
+    cursor:pointer;
+
+}
+
+.main_link_container a{
+    color:white;
+    font-size:18px;
+}
+
+/* ------Styling the Sub Menu------*/
+.sub_menu{
+    background-color: #333333;         /*Sub Menu Background Color*/
+    display:none;
+}
+
+.sub_item_link{
+    display: block;
+    color: white;
+    padding: 14px 30px;
+    cursor: pointer;
+    border-bottom: 1px dotted #222222;
+    position: relative;
+}
+
+
+/* Line which appears on hover over the sub menu links*/
+.sub_item_link:before{
+    content: "";
+    position: absolute;
+    background-color: #2ecc71;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 85%;
+    width: 5px;
+    color:white;
+    display: block;
+    opacity: 0;
+}
+
+.sub_item_link:hover:before{
+    opacity: 1;
+}
+
+
+/*------Removing the border from the last Items------*/
+.last{
+    border-bottom: 0px !important;
+}
