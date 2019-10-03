@@ -28,13 +28,13 @@
     display: flex;
     background-color:#2ecc71;          /*Main Menu Background Color*/
     padding: 15px 30px;
-    border-bottom: 1px dotted #2ecc71;
+    border-bottom: 1px dotted #228B22;
     cursor:pointer;
 
 }
 
 .icon_container{
-    margin-left:auto;
+    margin-left: auto;
 }
 
 .icon_container .fas{
@@ -50,7 +50,8 @@
 /* ------Styling the Sub Menu------*/
 .sub_menu{
     background-color: #333333;         /*Sub Menu Background Color*/
-    display:none;
+    overflow: hidden;
+    transition: max-height 0.3s;
 }
 
 .sub_item_link{
